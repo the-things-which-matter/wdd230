@@ -15,7 +15,7 @@ header {
     padding: 1rem;
 }
 
-header-name {
+.header-name {
     font-size: 2rem; 
     font-weight: bold; 
 }
