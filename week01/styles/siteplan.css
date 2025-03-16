@@ -1,0 +1,63 @@
+/* Base styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Amita', serif;
+    color: #2596be;
+}
+
+a {
+    color: #2596be;
+    text-decoration: none;
+}
+
+header, footer {
+    background-color: #8ecae6;
+    padding: 20px;
+    text-align: center;
+}
+
+.ytcontent {
+    color: #6309ff;
+}
+
+button {
+    background-color: #ffb703;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2596be;
+}
+
+/* Section styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kampala {
+    width: 200px;
+    height: 210px;
+}
+
+.wireframe-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    border: 1px dashed #2596be;
+    text-align: center;
+    line-height: 300px;
+    font-size: 20px;
+    color: #2596be;
+}
