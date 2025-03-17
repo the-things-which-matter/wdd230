@@ -61,3 +61,17 @@ button:hover {
     font-size: 20px;
     color: #2596be;
 }
+
+/* Color Schema */
+.color-schema {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-left: 5px solid #2596be;
+}
+
+/* Typography */
+.typography {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-left: 5px solid #ffb703;
+}
