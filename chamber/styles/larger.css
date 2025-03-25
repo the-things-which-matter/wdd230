@@ -1,0 +1,10 @@
+
+
+
+/* Large View */
+@media (min-width: 769px) {
+    #menu-items {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,115 @@
+/* Base Styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #8ecae6;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
+
+h1, h2 {
+    font-family: 'Amita', serif;
+    color: #2596be;
+}
+
+
+#hero {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#image-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.side-image {
+    width: 48%;
+    height: auto;
+}
+
+
+#main-title h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+#secondary-text {
+    padding: 20px;
+}
+
+#secondary-text h2 {
+    color: #2596be;
+}
+
+
+#cta .cta-link {
+    display: inline-block;
+    background-color: #ffb703;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#cta .cta-link:hover {
+    background-color: #2596be;
+}
+
+#current-events, #weather, #company-spotlight {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid #2596be;
+}
+
+
+footer {
+    background-color: #8ecae6;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+ 
+    #menu {
+        display: block;
+    }
+
+    #menu-items {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }}
