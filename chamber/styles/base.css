@@ -8,11 +8,11 @@ body {
 }
 
 .ytcontent {
-    color: #005f73;
+    color: #1e7ca7;
 }
 
 header, footer {
-    background-color: #8ecae6;
+    background-color: #1e7ca7;
     padding: 20px;
     text-align: center;
 }
@@ -23,7 +23,7 @@ header img {
 
 h1, h2 {
     font-family: 'Amita', serif;
-    color: #005f73;
+    color:  #0d2c94;
 }
 
 #hero {
@@ -37,6 +37,11 @@ h1, h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#menu-items {
+    background-color:#1a252f;
+    color: white;
 }
 
 .kampala {
@@ -60,6 +65,8 @@ h1, h2 {
 #main-title h1 {
     text-align: center;
     margin: 20px 0;
+    color: #0d2c94;
+
 }
 
 #secondary-text {
@@ -67,7 +74,7 @@ h1, h2 {
 }
 
 #secondary-text h2 {
-    color: #2596be;
+    color:  #0d2c94;
 }
 
 
@@ -94,7 +101,7 @@ h1, h2 {
 }
 
 footer {
-    background-color: #8ecae6;
+    background-color: #1e7ca7;
     padding: 20px;
     text-align: center;
 }
