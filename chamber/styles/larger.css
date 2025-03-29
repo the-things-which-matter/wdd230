@@ -2,18 +2,18 @@
 @media (min-width: 769px) {
     #menu-items {
         display: flex;
-        justify-content: space-evenly; /* Adjusts the spacing evenly */
+        justify-content: space-evenly;
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
 
     #menu-items li {
-        margin: 0;  /* Remove margin between menu items */
-        padding: 0 10px; /* Slight padding for separation */
+        margin: 0;
+        padding: 0 10px;
     }
 
     .hamburger-button {
-        display: none;
+        display: none; /* Hide on large screens */
     }
 }

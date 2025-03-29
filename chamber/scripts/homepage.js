@@ -1,10 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+  
+    document.getElementById('last-modified').textContent = document.lastModified;
 
-document.getElementById('last-modified').textContent = document.lastModified;
-        
 
-const hamburgerButton = document.querySelector('.hamburger-button');
-const menuItems = document.querySelector('#menu-items');
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const menuItems = document.querySelector('#menu-items');
 
-hamburgerButton.addEventListener('click', () => {
-    menuItems.classList.toggle('show');
+    if (hamburgerButton && menuItems) {
+        hamburgerButton.addEventListener('click', () => {
+            const isOpen = menuItems.classList.toggle('show');
+            
+          
+            hamburgerButton.setAttribute("aria-expanded", isOpen);
+            menuItems.setAttribute("aria-hidden", !isOpen);
+        });
+    }
 });
