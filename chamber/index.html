@@ -41,7 +41,12 @@
 
     <main>
         <section id="hero">
-            <img src="images/kampala-hero.webp" alt="Kampala Chamber Hero Image" class="hero-img">
+            <picture>
+                <source srcset="images/temple-mobile.webp" media="(max-width: 768px)">
+                <source srcset="images/temple-large.webp" media="(min-width: 769px)">
+                <img src="images/temple-large.webp" alt="Temple Image" class="hero-img" loading="lazy">
+            </picture>
+            <div class="temple-label">My Favorite Temple</div>
         </section>
 
         <section id="main-title">
@@ -79,7 +84,19 @@
             <h2>Company Spotlight</h2>
             <p>Introducing XYZ Ltd - a company making strides in renewable energy solutions.</p>
         </section>
+
+      
+        <section id="visit-counter">
+            <h2>Page Visits</h2>
+            <p>You've visited this page <span id="visit-count">0</span> times.</p>
+        </section>
     </main>
+
+    <section id="map">
+        <h2>Find Us</h2>
+      
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL" loading="lazy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
 
     <footer>
         <p>&copy; 2025 Kampala Chamber of Commerce. All rights reserved.</p>
