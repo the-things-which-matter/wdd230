@@ -40,8 +40,20 @@
         </nav>
         <button id="darkModeToggle">🌙 Dark Mode</button>
     </header>
-    
+
     <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/latter-day-temple-mobile.webp" media="(max-width: 400px)">
+                <source srcset="images/latter-day-temple-large.webp" media="(min-width: 401px)">
+                <img src="images/latter-day-temple-large.webp" alt="Latter-day Temple" class="hero-img">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Latter-day Temple</h2>
+            </div>
+        </section>
+
         <section class="card learning-activities">
             <h2>Learning Activities</h2>
             <ul>
@@ -50,13 +62,25 @@
                 <li><a href="#">Activity 3</a></li>
             </ul>
         </section>
-        
+
         <section class="card information">
             <h2>Information</h2>
             <p>In 2019, inbound tourism generated UGX 4,580.4 billion, highlighting the sector's significant contribution to Uganda's economy. Tourist arrivals in Uganda increased from 815,000 in 2022 to 1,272,000 in 2023, indicating a strong recovery post-pandemic.</p>
         </section>
+        
+        
+        <section class="card page-visit-counter">
+            <h2>Page Visits</h2>
+            <p id="visitCount">This page has been visited <span id="counter">0</span> times.</p>
+        </section>
+
+      
+        <section class="card google-map">
+            <h2>My Hometown</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </main>
-    
+
     <footer>
         <p>&copy; <span id="currentyear"></span> Brigham Iga, Uganda.</p>
         <p id="lastModified"></p>
