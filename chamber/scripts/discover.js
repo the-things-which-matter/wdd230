@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
-    document.getElementById('last-modified').textContent = document.lastModified;
+    //  Set last modified date
+    document.getElementById('lastModified').textContent = document.lastModified;
 
     const hamburgerButton = document.querySelector('.hamburger-button');
     const menuItems = document.querySelector('#menu-items');
@@ -13,31 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
-    const visitCountKey = 'visitCount';
-    let visitCount = localStorage.getItem(visitCountKey);
-
-    if (!visitCount) {
-        visitCount = 0;
-    }
-
-    visitCount++;
-    localStorage.setItem(visitCountKey, visitCount);
-
-    const visitCountElement = document.getElementById('visit-count');
-    if (visitCountElement) {
-        visitCountElement.textContent = visitCount;
-    }
-
-   
+  
     const visitMessage = document.getElementById("visit-message");
     const lastVisit = localStorage.getItem("lastVisit");
-    const currentDate = new Date().getTime();
+    const currentDate = Date.now(); 
 
     if (!lastVisit) {
         visitMessage.textContent = "Welcome! This is your first visit.";
     } else {
-        const lastVisitDate = parseInt(lastVisit);
+        const lastVisitDate = parseInt(lastVisit, 10);
         const daysBetween = Math.floor((currentDate - lastVisitDate) / (1000 * 60 * 60 * 24));
 
         if (daysBetween === 0) {
@@ -49,6 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+
     localStorage.setItem("lastVisit", currentDate);
 });
-
