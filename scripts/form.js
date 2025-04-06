@@ -3,6 +3,32 @@ document.getElementById("lastModified").textContent = "Last Modified: " + docume
 
 
 
+
+const form = document.getElementById('userForm');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
+const rating = document.getElementById('rating');
+const ratingValue = document.getElementById('ratingValue');
+
+rating.addEventListener('input', () => {
+    ratingValue.textContent = rating.value;
+});
+
+form.addEventListener('submit', (e) => {
+    if (password.value !== confirmPassword.value) {
+        e.preventDefault();
+        alert("Passwords do not match. Please try again.");
+        password.value = '';
+        confirmPassword.value = '';
+        password.focus();
+    }
+});
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     const password = document.getElementById('password');
