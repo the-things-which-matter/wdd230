@@ -22,6 +22,10 @@ header {
     align-items: center;
 }
 
+.kampala {
+    border-radius: 10%;
+}
+
 .profile-container {
     display: flex;
     align-items: center;
