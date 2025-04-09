@@ -1,7 +1,7 @@
 
+
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-
 
 const menuToggle = document.getElementById("menuToggle");
 const nav = document.querySelector("nav");

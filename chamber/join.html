@@ -4,71 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Kampala Chamber of Commerce - Home page" />
-    <meta property="og:url" content="https://the-things-which-matter.github.io/wdd230/chamber/index.html" />
+    <meta property="og:title" content="Brigham Iga - WDD 230 - Web Frontend Development" />
+    <meta property="og:url" content="https://the-things-which-matter.github.io/wdd230/" />
     <meta property="og:image" content="https://sl.bing.net/hKS41zDF8mW" />
     <meta property="og:type" content="website" />
-    <meta name="description"
-        content="Welcome to the Chamber of Commerce Membership Application page. Fill in your details below to join our community of local businesses. By becoming a member, you'll gain access to networking opportunities, resources, and support that can help your business grow and thrive.">
+    <meta name="description" content="Welcome to my WDD 230 web development page. My name is Brigham Iga; Learn about my journey in web development and explore resources and activities.">
     <meta name="author" content="Brigham Iga">
-
-    <title>Kampala Chamber of Commerce - Join Us</title>
+    <title>Brigham Iga - WDD 230 - Web Frontend Development</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Noto+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menuToggle.js" defer></script>
+    <script src="scripts/darkModeToggle.js" defer></script>
 
-    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
-
     <header>
-        <img class="kampala" src="images/kampalat.webp" alt="Kampala Chamber of Commerce Logo" width="100">
-        <h1 class="ytcontent">Kawempe Municipality Chamber of Commerce</h1>
-
+        <div class="profile-container">
+            <img src="images/Iga_4.webp" alt="Brigham Iga's Profile Picture" class="profile-img">
+            <h1 class="profile-name">WDD 230: Web Frontend Development</h1>
+        </div>
+        <button id="menuToggle">☰</button>
         <nav>
-            <button class="hamburger-button" aria-label="Toggle Menu">&#9776;</button>
-            <ul id="menu-items">
-                <li><a href="https://the-things-which-matter.github.io/wdd230/chamber/index.html">Home</a></li>
-                <li><a href="#chamber">Chamber</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul>
+                <li><a href="https://the-things-which-matter.github.io/wdd230/index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://the-things-which-matter.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
             </ul>
         </nav>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
     </header>
 
     <main>
         <section class="form-section">
             <h2>Membership Application Form</h2>
             <p>Please fill out the form below to apply for membership in the Kampala Chamber of Commerce.</p>
-
+        
             <form action="thankyou.html" method="get" id="membership-form">
                 
                 <label for="first-name">First Name:</label>
                 <input type="text" id="first-name" name="first-name" required placeholder="John" />
-
+        
                
                 <label for="last-name">Last Name:</label>
                 <input type="text" id="last-name" name="last-name" required placeholder="Doe" />
-
+        
                
                 <label for="title">Title/Position:</label>
                 <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}" placeholder="e.g. Business Owner" />
-
+        
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required placeholder="example@mail.com" />
-
+        
                
                 <label for="mobile">Mobile Phone Number:</label>
                 <input type="tel" id="mobile" name="mobile" required placeholder="123-456-7890" />
-
+        
                
                 <label for="business-name">Business/Organization Name:</label>
                 <input type="text" id="business-name" name="business-name" required placeholder="Your Business Name" />
-
+        
              
                 <label for="membership-level">Membership Level:</label>
                 <select id="membership-level" name="membership-level">
@@ -77,19 +79,19 @@
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
                 </select>
-
+        
               
                 <label for="description">Business/Organization Description:</label>
                 <textarea id="description" name="description"></textarea>
-
+        
              
                 <input type="hidden" id="timestamp" name="timestamp" />
-
+        
              
                 <input type="submit" value="Submit Application" />
             </form>
         </section>
-
+        
         <section class="membership-benefits">
             <h3>Membership Level Benefits</h3>
             <div class="benefits">
@@ -114,12 +116,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Kampala Chamber of Commerce. All rights reserved.</p>
-        <p>Last modified: <span id="last-modified"></span></p>
-        <p>Developed by Brigham Iga, WDD 230</p>
-        <p>Contact us: email@kampalachamber.com</p>
+        <p>&copy; <span id="currentyear"></span> Brigham Iga, Uganda.</p>
+        <p id="lastModified"></p>
     </footer>
-
 </body>
-
 </html>
