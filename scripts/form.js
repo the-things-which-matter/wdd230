@@ -2,7 +2,6 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
-
 const form = document.getElementById('userForm');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
