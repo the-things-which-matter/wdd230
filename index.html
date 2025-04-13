@@ -19,14 +19,12 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-   
-    <script src="scripts/links.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/links.js" defer></script> 
     <script src="scripts/hamburger.js" defer></script>
-   
     <script src="scripts/menuToggle.js" defer></script>
     <script src="scripts/darkModeToggle.js" defer></script>
-
 </head>
 
 <body>
@@ -48,7 +46,7 @@
     </header>
 
     <main>
-        <!-- Hero Image Section -->
+     
         <section class="hero">
             <picture>
                 <source srcset="images/salt-lake.webp" media="(max-width: 400px)">
@@ -60,30 +58,27 @@
             </div>
         </section>
 
-        <div class="hero">
-            <picture>
-              <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-              <source srcset="images/hero-large.webp" media="(min-width: 501px)">
-              <img src="images/hero-large.webp" alt="Kampala Uganda Temple" width="960" height="300">
-            </picture>
-            <div class="herolabel">
-              <p>Kampala Uganda Temple</p>
-            </div>
-          </div>
-        
-          <h2>WDD 230: Web Frontend Development</h2>
-        
-          <section class="card learning-activities">
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <section class="card learning-activities">
             <h2>Learning Activities</h2>
             <div id="learningLinks">Loading activities...</div>
-          </section>
-        
-          <section class="card information">
+        </section>
+
+        <section class="card information">
             <h2>Information</h2>
             <p>In 2019, inbound tourism in Uganda contributed 7.7% to the GDP. The sector continues to show a strong recovery post-pandemic.</p>
             <div id="weather">
-              <p>Loading weather data...</p>
+                <p>Loading weather data...</p>
             </div>
+        </section>
+
+        <section class="card information">
+            <h2>Weather Information</h2>
+            <p>Current Temperature: <span id="weather-temp">Loading...</span></p>
+            <p>Description: <span id="weather-desc">Loading...</span></p>
+            <img id="weather-icon" src="" alt="Weather icon" width="64" height="64">
+            <p id="weather-error" style="color: red;"></p>
           </section>
     </main>
 
@@ -92,4 +87,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>

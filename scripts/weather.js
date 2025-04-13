@@ -1,27 +1,33 @@
-// scripts/weather.js
-const weatherContainer = document.getElementById("weather");
-const apiKey = "YOUR_API_KEY"; // Replace with your actual API key
-const lat = 0.3136;
-const lon = 32.5811;
-const units = "metric";
+const apiKey = "9eafc49a3278c38175a744a13411da1a";
+const city = "Kampala";
+const units = "metric"; 
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    const temp = Math.round(data.main.temp);
-    const desc = data.weather[0].description;
-    const icon = data.weather[0].icon;
-    const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-
-    weatherContainer.innerHTML = `
-      <p><strong>Current Weather:</strong></p>
-      <img src="${iconUrl}" alt="${desc}">
-      <p>${temp}°C - ${desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
-    `;
+fetch(weatherUrl)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Failed to fetch weather data.");
+    }
+    return response.json();
   })
-  .catch(error => {
-    console.error("Error fetching weather:", error);
-    weatherContainer.innerHTML = `<p>Unable to load weather data.</p>`;
+  .then((data) => {
+    const temperature = data.main.temp.toFixed(1);
+    const description = data.weather[0].description;
+    const iconCode = data.weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+    document.getElementById("weather-temp").textContent = `${temperature} °C`;
+    document.getElementById("weather-desc").textContent = description;
+
+    const weatherIcon = document.getElementById("weather-icon");
+    weatherIcon.setAttribute("src", iconUrl);
+    weatherIcon.setAttribute("alt", description);
+
+    document.getElementById("weather-error").textContent = ""; // Clear error if previously shown
+  })
+  .catch((error) => {
+    console.error("Weather API error:", error);
+    document.getElementById("weather-error").textContent = "Weather data unavailable.";
+    document.getElementById("weather-icon").style.display = "none";
   });
