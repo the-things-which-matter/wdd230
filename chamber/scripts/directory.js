@@ -1,8 +1,3 @@
-
-
-
-
-
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
@@ -14,25 +9,20 @@ menuToggle.addEventListener("click", () => {
     menuToggle.textContent = nav.style.display === "block" ? "✖" : "≡";
 });
 
-
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
-
 
 darkModeToggle.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
     localStorage.setItem("darkMode", body.classList.contains("dark-mode"));
 });
 
-
 if (localStorage.getItem("darkMode") === "true") {
     body.classList.add("dark-mode");
 }
 
-
 const googleMapIframe = document.querySelector("iframe.google-map");
 googleMapIframe.setAttribute("loading", "lazy");
-
 
 const images = document.querySelectorAll("img");
 
@@ -40,20 +30,12 @@ images.forEach((img) => {
     img.setAttribute("loading", "lazy");
 });
 
-
-
-
-
-
-
-
-
-
 const directory = document.querySelector("#directory");
 const gridBtn = document.querySelector("#gridView");
 const listBtn = document.querySelector("#listView");
 
-fetch("data/members.json")
+// ✅ Corrected path to JSON file
+fetch("../data/members.json")
   .then((response) => response.json())
   .then((data) => {
     displayMembers(data.members);
