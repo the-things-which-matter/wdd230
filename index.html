@@ -18,7 +18,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/getDates.js" defer></script>
+
+   
+    <script src="scripts/links.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+   
     <script src="scripts/menuToggle.js" defer></script>
     <script src="scripts/darkModeToggle.js" defer></script>
 
@@ -55,29 +60,31 @@
             </div>
         </section>
 
-        <section class="card learning-activities">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="#">Activity 1</a></li>
-                <li><a href="#">Activity 2</a></li>
-                <li><a href="#">Activity 3</a></li>
-            </ul>
-        </section>
-
-        <section class="card information">
-            <h2>Information</h2>
-            <p>In 2019, inbound tourism generated UGX 4,580.4 billion, highlighting the sector's significant contribution to Uganda's economy. Tourist arrivals in Uganda increased from 815,000 in 2022 to 1,272,000 in 2023, indicating a strong recovery post-pandemic.</p>
-        </section>
+        <div class="hero">
+            <picture>
+              <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+              <source srcset="images/hero-large.webp" media="(min-width: 501px)">
+              <img src="images/hero-large.webp" alt="Kampala Uganda Temple" width="960" height="300">
+            </picture>
+            <div class="herolabel">
+              <p>Kampala Uganda Temple</p>
+            </div>
+          </div>
         
-        <section class="card page-visit-counter">
-            <h2>Page Visits</h2>
-            <p id="visitCount">This page has been visited <span id="counter">0</span> times.</p>
-        </section>
-
-        <section class="card google-map">
-            <h2>My Hometown</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+          <h2>WDD 230: Web Frontend Development</h2>
+        
+          <section class="card learning-activities">
+            <h2>Learning Activities</h2>
+            <div id="learningLinks">Loading activities...</div>
+          </section>
+        
+          <section class="card information">
+            <h2>Information</h2>
+            <p>In 2019, inbound tourism in Uganda contributed 7.7% to the GDP. The sector continues to show a strong recovery post-pandemic.</p>
+            <div id="weather">
+              <p>Loading weather data...</p>
+            </div>
+          </section>
     </main>
 
     <footer>

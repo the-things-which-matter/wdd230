@@ -1,0 +1,39 @@
+{
+    "lessons": [
+      {
+        "lesson": "Week 1",
+        "links": [
+          { "title": "HTML Practice", "url": "https://example.com/html" },
+          { "title": "CSS Basics", "url": "https://example.com/css" }
+        ]
+      },
+      {
+        "lesson": "Week 2",
+        "links": [
+          { "title": "Media Query Practice", "url": "https://example.com/media-query" },
+          { "title": "Responsive Images", "url": "https://example.com/responsive-images" }
+        ]
+      },
+      {
+        "lesson": "Week 3",
+        "links": [
+          { "title": "JavaScript Intro", "url": "https://example.com/js-intro" },
+          { "title": "DOM Basics", "url": "https://example.com/dom-basics" }
+        ]
+      },
+      {
+        "lesson": "Week 4",
+        "links": [
+          { "title": "Forms and Validation", "url": "https://example.com/forms" },
+          { "title": "CSS Grid", "url": "https://example.com/css-grid" }
+        ]
+      },
+      {
+        "lesson": "Week 5",
+        "links": [
+          { "title": "Fetch API Practice", "url": "https://example.com/fetch-api" },
+          { "title": "Using JSON", "url": "https://example.com/json" }
+        ]
+      }
+    ]
+  }
