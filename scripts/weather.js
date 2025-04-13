@@ -24,7 +24,7 @@ fetch(weatherUrl)
     weatherIcon.setAttribute("src", iconUrl);
     weatherIcon.setAttribute("alt", description);
 
-    document.getElementById("weather-error").textContent = ""; // Clear error if previously shown
+    document.getElementById("weather-error").textContent = ""; 
   })
   .catch((error) => {
     console.error("Weather API error:", error);
