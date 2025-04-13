@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "BrightTech Solutions",
+        "address": "123 Innovation Ave, Tech City",
+        "phone": "555-123-4567",
+        "website": "https://www.brighttech.com",
+        "image": "brighttech.png",
+        "membership": "Gold",
+        "description": "Leading provider of cloud computing solutions."
+      },
+      {
+        "name": "GreenFields Organics",
+        "address": "78 Eco Lane, Freshville",
+        "phone": "555-987-6543",
+        "website": "https://www.greenfieldsorganics.com",
+        "image": "greenfields.png",
+        "membership": "Silver",
+        "description": "Organic food supplier focused on sustainability."
+      },
+      {
+        "name": "Peak Fitness Gym",
+        "address": "45 Fit Street, Healthtown",
+        "phone": "555-567-8901",
+        "website": "https://www.peakfitness.com",
+        "image": "peakfitness.png",
+        "membership": "Bronze",
+        "description": "24/7 gym with personal training and group classes."
+      },
+      {
+        "name": "City Bistro",
+        "address": "12 Gourmet Blvd, Flavor City",
+        "phone": "555-321-0987",
+        "website": "https://www.citybistro.com",
+        "image": "citybistro.png",
+        "membership": "Gold",
+        "description": "Trendy bistro offering fusion cuisine and local flavors."
+      },
+      {
+        "name": "Alpha Developers",
+        "address": "99 Code Road, DevCity",
+        "phone": "555-654-3210",
+        "website": "https://www.alphadev.com",
+        "image": "alphadev.png",
+        "membership": "Silver",
+        "description": "Software development company specializing in mobile apps."
+      },
+      {
+        "name": "UrbanStyle Fashion",
+        "address": "30 Trendy Way, Styleville",
+        "phone": "555-222-3344",
+        "website": "https://www.urbanstyle.com",
+        "image": "urbanstyle.png",
+        "membership": "Bronze",
+        "description": "Fashion brand for modern urban wear and accessories."
+      },
+      {
+        "name": "Happy Trails Travel",
+        "address": "77 Explore St, Adventure City",
+        "phone": "555-444-7788",
+        "website": "https://www.happytrails.com",
+        "image": "happytrails.png",
+        "membership": "Gold",
+        "description": "Travel agency offering custom adventure packages."
+      }
+    ]
+  }
