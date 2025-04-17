@@ -5,7 +5,7 @@
         "address": "123 Innovation Ave, Tech City",
         "phone": "555-123-4567",
         "website": "https://www.brighttech.com",
-        "image": "images/tech-hub.webp",
+        "image": "images/skyline.webp",
         "membership": "Gold",
         "description": "Leading provider of cloud computing solutions."
       },
@@ -14,7 +14,7 @@
         "address": "78 Eco Lane, Freshville",
         "phone": "555-987-6543",
         "website": "https://www.greenfieldsorganics.com",
-        "image": "images/green-earth.webp",
+        "image": "images/fresh-farm.webp",
         "membership": "Silver",
         "description": "Organic food supplier focused on sustainability."
       },
@@ -23,7 +23,7 @@
         "address": "45 Fit Street, Healthtown",
         "phone": "555-567-8901",
         "website": "https://www.peakfitness.com",
-        "image": "images/skyline.webp",
+        "image": "images/gym.webp",
         "membership": "Bronze",
         "description": "24/7 gym with personal training and group classes."
       },
@@ -32,7 +32,7 @@
         "address": "12 Gourmet Blvd, Flavor City",
         "phone": "555-321-0987",
         "website": "https://www.citybistro.com",
-        "image": "images/tech-hub.webp",
+        "image": "images/financial-services.webp",
         "membership": "Gold",
         "description": "Trendy bistro offering fusion cuisine and local flavors."
       },
