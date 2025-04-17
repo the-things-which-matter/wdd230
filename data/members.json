@@ -41,7 +41,7 @@
         "address": "99 Code Road, DevCity",
         "phone": "555-654-3210",
         "website": "https://www.alphadev.com",
-        "image": "/images/tech-hub.webp",
+        "image": "images/code.webp",
         "membership": "Silver",
         "description": "Software development company specializing in mobile apps."
       },
