@@ -93,6 +93,16 @@ nav ul li a.active {
 
 
 
+.card img {
+    width: 50%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    border-radius: 10%;
+  }
+  
+
+
 
 
 
