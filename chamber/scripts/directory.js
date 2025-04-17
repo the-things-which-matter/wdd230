@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridBtn = document.querySelector("#gridView");
     const listBtn = document.querySelector("#listView");
 
-    // ✅ Correct path to JSON file (from root level)
+
     fetch("../data/members.json")
         .then((response) => {
             if (!response.ok) {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then((data) => {
-            console.log(data); // Check the output of the JSON data
+            console.log(data); 
             displayMembers(data.members);
         })
         .catch((error) => {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         function displayMembers(members) {
             if (!directory) return;
         
-            directory.innerHTML = ""; // Clear existing
+            directory.innerHTML = ""; 
         
             members.forEach((member) => {
                 const card = document.createElement("div");
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
 
-    // Toggle Views
+ 
     gridBtn?.addEventListener("click", () => {
         directory?.classList.add("grid-view");
         directory?.classList.remove("list-view");
