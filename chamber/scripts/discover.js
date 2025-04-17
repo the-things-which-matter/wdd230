@@ -39,3 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     localStorage.setItem("lastVisit", currentDate);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Setting last modified date...");
+    const lastModifiedElement = document.getElementById('last-modified');
+    lastModifiedElement.textContent = document.lastModified;
+    console.log("Last modified set to:", document.lastModified);
+});
