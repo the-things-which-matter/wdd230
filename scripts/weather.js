@@ -4,6 +4,12 @@ const units = "metric";
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
+
+
+
+
+
+
 fetch(weatherUrl)
   .then((response) => {
     if (!response.ok) {
@@ -31,3 +37,5 @@ fetch(weatherUrl)
     document.getElementById("weather-error").textContent = "Weather data unavailable.";
     document.getElementById("weather-icon").style.display = "none";
   });
+
+  
