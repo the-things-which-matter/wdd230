@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     //  Set last modified date
-    document.getElementById('lastModified').textContent = document.lastModified;
-
+   
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById('last-modified').textContent = document.lastModified;
+   
+    
     const hamburgerButton = document.querySelector('.hamburger-button');
     const menuItems = document.querySelector('#menu-items');
 

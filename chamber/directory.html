@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Kampala Chamber of commerce directory" />
+    <meta property="og:title" content="Kawempe Chamber of Commerce Directory - Discover Local Businesses and Services" />
     <meta property="og:url" content="https://the-things-which-matter.github.io/wdd230/" />
-    <meta property="og:image" content="https://sl.bing.net/hKS41zDF8mW" />
+    <meta property="og:image" content="https://the-things-which-matter.github.io/wdd230/chamber/images/kampala.webp" />
     <meta property="og:type" content="website">
     <meta name="description"
         content="Discover the vibrant businesses that make up our community. our members offer a wide range of services and products. Browse through our directory to learn more, visit their websites, or get in touch directly.">
     <meta name="author" content="Brigham Iga">
-    <title>Brigham Iga - WDD 230 - Web Frontend Development</title>
+    <title>Kawempe Chamber of Commerce Directory - Discover Local Businesses and Services</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,22 +30,18 @@
 
 <body>
     <header>
-        <div class="profile-container">
-            <img src="images/Iga_4.webp" alt="Brigham Iga's Profile Picture" class="profile-img">
-            <h1 class="profile-name">WDD 230: Web Frontend Development</h1>
-        </div>
-        <button id="menuToggle">☰</button>
+        <img class="kampala" src="images/kampala.webp" alt="Kampala Chamber of Commerce Logo" width="100">
+        <h1 class="ytcontent">Kawempe Municipality Chamber of Commerce</h1>
+
         <nav>
-            <ul>
+            <button class="hamburger-button" aria-label="Toggle Menu">&#9776;</button>
+            <ul id="menu-items">
                 <li><a href="https://the-things-which-matter.github.io/wdd230/chamber/index.html">Home</a></li>
                 <li><a href="https://the-things-which-matter.github.io/wdd230/chamber/discover.html">Discover</a></li>
-                <li><a href="https://the-things-which-matter.github.io/wdd230/chamber/directory.html" class="active">Directory</a></li>
+                <li><a href="https://the-things-which-matter.github.io/wdd230/index.html" class="active">Directory</a>
                 <li><a href="https://the-things-which-matter.github.io/wdd230/chamber/join.html">Join</a></li>
-              
-
             </ul>
         </nav>
-        <button id="darkModeToggle">🌙 Dark Mode</button>
     </header>
 
     <main>
@@ -62,8 +58,10 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Brigham Iga, Uganda.</p>
-        <p id="lastModified"></p>
+        <p>&copy; 2025 Kampala Chamber of Commerce. All rights reserved.</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+        <p>Developed by Brigham Iga, WDD 230</p>
+        <p>Contact us: email@kampalachamber.com</p>
     </footer>
 </body>
 
